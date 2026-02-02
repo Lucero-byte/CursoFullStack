@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body text-center">
+        <img
+        [src]="product.image"
+        class="img-fluid mb-3 rounded"
+        >
+
+
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <p class="card-text">{{product.price}}</p>
+        <button class="btn btn-primary d-inline-flex align-items-center gap-2"
+        (click)="onAddCart(product)">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carro</button>
+    </div>
+</div>
